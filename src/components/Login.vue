@@ -38,7 +38,19 @@
                         password: this.password
                     })
                     .then(response => {
- 
+                        localStorage.setItem('user',JSON.stringify('user'))
+                        localStorage.setItem('jwt','token')
+
+                        if (localStorage.getItem('jwt') != null){
+                            this.$emit('loggedIn')
+                            if(this.$route.params.nextUrl != null){
+                                this.$router.push(this.$route.params.nextUrl)
+                            }
+                            else {
+                                this.$router.push('dashboard')
+                            }
+                        }
+
                     })
                     .catch(function (error) {
                         console.error(error.response);
