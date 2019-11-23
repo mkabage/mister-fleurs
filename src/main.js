@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import App from './components/App.vue'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
+import Help from './components/Help.vue'
 import Contact from './components/Contact.vue'
 import Dashboard from './components/Dashboard.vue'
 import Login from './components/Login.vue'
@@ -28,6 +29,7 @@ let router = new VueRouter({
   routes: [ { path: '/', component: Home },
   { path: '/contact', component: Contact },
   { path: '/about', component: About, },
+  { path: '/help', component: Help, },
   { path: '/login', component: Login, meta: { guest: true } },
   { path: '/dashboard', component: Dashboard, meta: { requiresAuth: true } } ] });
 
