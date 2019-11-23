@@ -1,28 +1,76 @@
 <template>
   <div id="app">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="../assets/brand-logo.png" />
+      <div>
+    <nav class="container navbar navbar-expand-lg navbar-light bg-light">
     <router-link to="/">Home</router-link>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav" style="width: 100%;">
 
-      <ul class="navbar-nav">
-      <li class="nav-item">
-      <router-link class="nav-link" to="/about">About</router-link>
-      </li>
-      <li class="nav-item">
-      <router-link class="nav-link" to="/contact">Contact</router-link>
-      </li>
-      <li class="nav-item">
-      <router-link class="nav-link" to="/login">Login</router-link>
-      </li>      
-      </ul>
-    </div>
+        
+          <li class="nav-item">
+            <router-link class="nav-link" to="/about">About</router-link>
+          </li>
+          <li class="nav-item" style="margin-right: 490px">
+            <router-link class="nav-link" to="/contact">Contact</router-link>
+          </li>
+       
+
+        <div class="col-md-4">
+          <li class="nav-item right">
+            <router-link class="nav-link" to="/contact">Help</router-link>
+          </li>    
+          <li class="nav-item right">
+            <router-link class="nav-link" to="/login">Login</router-link>
+          </li>
+
+          <li class="nav-item right">
+            <router-link class="nav-link" to="/contact">Cart</router-link>
+          </li>
+        </div>
+       
+    </ul>
+
   </nav>
+</div> 
 
-    <router-view></router-view>
+  <hr/>
+  <router-view></router-view>
+
+<hr/>
+
+<div style="margin-left: 80px">
+    <div class="row">
+      <div class="col-md-2" style="text-align: left;">
+        <b>Mister Fluers</b>
+        <div>
+          Home
+        </div>
+        <div>
+          About us
+        </div>
+        <div>
+          Concept
+        </div>
+        <div>
+          Contact us
+        </div>
+      </div>
+      
+
+      <div class="col-md-8 social-plugins" style="padding: 96px; text-align: center;">
+        <font-awesome-icon icon="twitter" />
+        COPYRIGHT 2018 MISTER FLUERS
+      </div>
+
+      <div class="col-md-2" style="text-align: left;">
+        <b>Services</b>
+        <div>
+          Bouquets
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 </template>
 

@@ -1,0 +1,35 @@
+hr{
+    font-weight: bold;
+    border: 1px solid black !important;
+    margin-bottom: 60px !important;
+}
+
+.brand-text{
+    line-height: 3em;
+    font-weight: bold;
+    padding-top: 90px;
+    padding-left: 80px;
+    font-size: 25px;
+    text-align: left;
+}
+
+#app .bg-light{
+    background-color: white !important;
+}
+
+#app nav .nav-item{
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+#app{
+    .router-link-active{
+        font-weight: bold;
+        color: blue($color: #000000)
+        // padding: 0 20px;
+    }
+
+    .right{
+        float: right;
+    }
+}
