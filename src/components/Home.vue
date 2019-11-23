@@ -33,7 +33,7 @@
         <div>
           <a class="text-info" v-on:click="addToCart(product)"> Add</a>
           <span style="margin: 0 15px;">{{productsCount[product.name] || 0}}</span>
-          <a class="text-info" v-on:click="removeFromCart(product)"> Remove</a>
+          <a class="text-info" v-if="invalidEmail" v-on:click="removeFromCart(product)"> Remove</a>
         </div>
       </div>
     </div>
