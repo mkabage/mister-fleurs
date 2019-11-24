@@ -5,6 +5,7 @@ import Home from './components/Home.vue'
 import About from './components/About.vue'
 import Help from './components/Help.vue'
 import Contact from './components/Contact.vue'
+import CartItems from './components/CartItems.vue'
 import Dashboard from './components/Dashboard.vue'
 import Login from './components/Login.vue'
 import axios from 'axios'
@@ -35,6 +36,7 @@ let router = new VueRouter({
 
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
+Vue.component("CartItems", CartItems);
 
 Vue.prototype.$http = axios
 
@@ -75,6 +77,20 @@ Vue.prototype.recalculateCounts = function(){
   
   localStorage.setItem('cartItemsCounts', JSON.stringify(products))
   return products;
+}
+
+Vue.prototype.isLogin = function(){
+  let loginName = localStorage.getItem('userName')
+
+  return (loginName != undefined && loginName != null && loginName.length > 0)
+}
+
+Vue.prototype.logout = function(){
+  localStorage.removeItem('userName');
+}
+
+Vue.prototype.clearCart = function(){
+  localStorage.removeItem('cartItems');
 }
 
 Vue.prototype.removeItemsFromCart = function(item){

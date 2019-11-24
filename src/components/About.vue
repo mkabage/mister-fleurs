@@ -1,11 +1,35 @@
 <template>
-  <div class="hello">
-    <h1>About us page</h1>
+  <div class="container">
+    <h3><u>ABOUT US</u></h3>
+    <br/>
+    <span style="text-align: left">
     <p>
-      Old legacy systems can obstruct your goal to be a data-driven business. Competitive pressures, a code-heavy legacy system that is expensive to maintain, new compliance standards in play(e.g. GDPR)
-      can become very overwhelming for a business.
+      At Mister Fleurs we sell the best qality prices at the best possible prices, 
+      straight from the farm.
     </p>
+    <p>
+      After being in the industry for many and years selling flowers all over the world we have been witness to 
+      the many inefficiencies with the current industry models
+    </p>
+    <p>Namely;</p>
+
+    
+    <p>
+      1. The final customer ends up pay for these inefficiencies and many intermediaries (After leaving the farm the typical flower changes 
+      hands 3 times before the end customer get their hands on them)
+    </p>
+    <p>
+      2. Final customers tend to get old flowers that have been sitting in cold rooms.
+    </p>
+    <p> 
+      3. Tons of lowers are thrown away they are 
+    </p>
+    
+    </span>
+
+    <CartItems />
   </div>
+  
 </template>
 
 <script>
