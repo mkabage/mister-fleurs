@@ -18,7 +18,7 @@
                     <div>
                         <small class="text-danger" v-if="invalidCredentials">Invalid credentials</small>
                     </div>
-                    
+
                     <button type="submit" @click="handleSubmit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
@@ -44,12 +44,12 @@
                 this.invalidCredentials = false;
 
                 if(emailRegex.test(this.email) && this.password.length > 0){
-                    this.$http.get('https://api.myjson.com/bins/1gcjp6')
+                    this.$http.get('https://api.myjson.com/bins/gwvbe')
                     .then(response => {
                         let usersData = response.data;
 
                         let user = usersData.filter(user => {
-                            return (user.email.trim() == this.email.trim() && 
+                            return (user.email.trim() == this.email.trim() &&
                             user.password == this.password.trim())
                         })
 
@@ -69,5 +69,5 @@
                 }
             }
         }
-    
+
 </script>
