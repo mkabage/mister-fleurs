@@ -4,6 +4,16 @@ hr{
     margin-bottom: 60px !important;
 }
 
+.nav-link{
+    cursor: pointer;
+}
+
+@media(max-width: 960px){
+    .nav-link{
+        float: left;
+    }
+}
+
 .brand-text{
     line-height: 3em;
     font-weight: bold;
@@ -19,7 +29,7 @@ hr{
 
 #app nav .nav-item{
     font-weight: bold;
-    padding: 0 20px;
+    padding: 0 5px;
 }
 
 #app{
@@ -149,4 +159,28 @@ hr{
 
 #login-form{
     text-align: left;
+}
+
+#app .footer{
+    a {
+        color: black;
+        font-weight: normal;
+    }
+
+    svg{
+        font-size: 26px;
+        margin-left: 20px;
+    }
+}
+
+#app .contact-us{
+    form{
+        label{
+            text-align: left !important;
+        }
+    }
+}
+
+.pointer{
+    cursor: pointer;
 }
